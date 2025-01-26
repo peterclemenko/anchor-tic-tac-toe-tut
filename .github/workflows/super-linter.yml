@@ -27,3 +27,7 @@ jobs:
           VALIDATE_ALL_CODEBASE: false
           DEFAULT_BRANCH: "main"
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+        # this is a mod to the action that adds smart contract auditing
+      - name: radar-action
+        uses: Auditware/radar-action@0.1.1
